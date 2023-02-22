@@ -45,7 +45,7 @@
 				"text": "HOME",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/icon/home.png",
-				"selectedIconPath": "static/icon/home (1).png"
+				"selectedIconPath": "static/icon/homeSelected.png"
 			},
 			{
 				"text": "CART",
