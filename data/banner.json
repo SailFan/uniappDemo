@@ -1,0 +1,22 @@
+{
+	"code": 1,
+	"msg": "成功",
+	"data": {
+		"mainPositionList": [{
+				"id": "143",
+				"imgUrl": "file:/static/banner/cumputer.png",
+				"title": "cumputer"
+			},
+			{
+				"id": "147",
+				"imgUrl": "file:///Users/yz/Documents/HBuilderProjects/uniappDemo/static/banner/ear.png",
+				"title": "ear"
+			},
+			{
+				"id": "148",
+				"imgUrl": "/static/banner/phone.png",
+				"title": "phone"
+			}
+		]
+	}
+}
