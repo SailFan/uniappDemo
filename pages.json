@@ -1,0 +1,71 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+			
+			}
+		}
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                
+            }
+            
+        }
+        ,{
+            "path" : "pages/vip/vip",
+            "style" :                                                                                    
+            {
+               
+            }
+            
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" :                                                                                    
+            {
+               
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "Microshop",
+		"navigationBarBackgroundColor": "#b50e03",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"selectedColor": "#b50e03",
+		// "color": "",
+		"list": [
+			{
+				"text": "HOME",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/home.png",
+				"selectedIconPath": "static/icon/home (1).png"
+			},
+			{
+				"text": "CART",
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/icon/icon_tabbar_shoppingup.png",
+				"selectedIconPath": "static/icon/icon_tabbar_shoppingup (1).png"
+			},
+			{
+				"text": "NEWS",
+				"pagePath": "pages/news/news",
+				"iconPath": "static/icon/icon_tabbar_xiaoxi_default.png",
+				"selectedIconPath": "static/icon/icon_tabbar_xiaoxi_default (1).png"
+			},
+			{
+				"text": "VIP",
+				"pagePath": "pages/vip/vip",
+				"iconPath": "static/icon/vip.png",
+				"selectedIconPath": "static/icon/vip (1).png"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}

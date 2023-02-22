@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/vip/vip",
+    "pages/news/news"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Microshop",
+    "navigationBarBackgroundColor": "#b50e03",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#b50e03",
+    "list": [
+      {
+        "text": "HOME",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/_ic_tabbar_home.png",
+        "selectedIconPath": "static/icon/ic_tabbar_home_select.png"
+      },
+      {
+        "text": "CART",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/icon/icon_tabbar_shoppingup.png",
+        "selectedIconPath": "static/icon/icon_tabbar_shoppingup (1).png"
+      },
+      {
+        "text": "NEWS",
+        "pagePath": "pages/news/news",
+        "iconPath": "static/icon/icon_tabbar_xiaoxi_default.png",
+        "selectedIconPath": "static/icon/icon_tabbar_xiaoxi_default (1).png"
+      },
+      {
+        "text": "VIP",
+        "pagePath": "pages/vip/vip",
+        "iconPath": "static/icon/vip.png",
+        "selectedIconPath": "static/icon/vip (1).png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
