@@ -1,9 +1,44 @@
 <template>
 	<view class="home">
-		<swiper>
-			<swiper-item>1</swiper-item>
-			<swiper-item>1</swiper-item>
+		<swiper indicator-dots circular>
+			<swiper-item v-for="item in swiperList" :key="item.id">
+				<image :src="item.imgUrl"></image>
+			</swiper-item>
 		</swiper>
+		<!-- 导航 -->
+	<view class="nav">
+		<view class="nav_item">
+			<view class="iconfont icon-chaoshi"></view>
+			<text>超市</text>
+		</view>
+		<view class="nav_item">
+			<view class="iconfont icon-shipin_o"></view>
+			<text>视频</text>
+		</view>
+		<view class="nav_item">
+			<view class="iconfont icon-shequ"></view>
+			<text>社区</text>
+		</view>
+		<view class="nav_item">
+			<view class="iconfont icon-guanyuwomen"></view>
+			<text>关于我们</text>
+		</view>
+	</view>	
+	<view class="recommend">
+		<view class="title">推荐商品</view>
+		<view class="commodity_list">
+			<view class="commodity_item">
+				<image src="https://xa.zol.com.cn/picture/article/140/139756.jpg"></image>
+				<view class="price">
+					<text>$ 2199</text>
+					<text>$ 3199</text>
+				</view>
+				<view class="name">
+					联想ThinkPad X1 Carbon英特尔酷睿i7轻薄笔记本（i7-1165G7u/16G/1T/FHD/指纹/WIN11/1年上门）
+				</view>
+			</view>
+		</view>
+	</view>
 	</view>
 </template>
 
@@ -11,7 +46,7 @@
 	export default {
 		data() {
 			return {
-				swipers: ""
+				swiperList: []
 			}
 		},
 		onLoad() {
@@ -21,13 +56,14 @@
 			getSwipers(){
 				uni.request({
 					url: '/data/banner.json',
-					success(res) {
+					success: (res) => {
 						if(res.data.code!==1){
 							return uni.showToast({
 								title: "获取数据失败"
 							})
 						}
-						this.swipers=res.data.data
+						this.swiperList=res.data.data.mainPositionList
+						console.log(this.swiperList)
 					}
 				})
 			}
@@ -35,8 +71,91 @@
 	}
 </script>
 
-<style>
-	
-
-	
+<style lang="scss">
+	@import url("../../static/fonts/iconfont.css");
+	.home {
+		swiper {
+			width: 750rpx;
+			height: 380rpx;
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.nav{
+		display: flex;
+		.nav_item {
+			width: 25%;
+			text-align: center;
+			view{
+				width: 120rpx;
+				height: 120rpx;
+				background: #b50e03;
+				border-radius: 60rpx;
+				margin: 10px auto;
+				line-height: 120rpx;
+				color: #fff;
+				font-size: 50rpx;
+			}
+			text{
+				font-size: 32rpx;
+			}
+		}
+	}
+	.recommend{
+		background: #eee;
+		overflow: hidden;
+		margin-top: 10rpx;
+		.title {
+			height: 50px;
+			line-height: 50px;
+			color:#b50e03;
+			text-align: center;
+			background: #fff;
+			letter-spacing: 20rpx;
+			margin: 7rpx 0;
+		}
+		.commodity_list{
+			padding: 0 15rpx;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.commodity_item{
+				background: #fff;
+				width: 355rpx;
+				margin: 10rpx 0;
+				padding: 15rpx;
+				box-sizing: border-box;
+				image{
+					width: 80%;
+					height: 150rpx;
+					margin: 0 auto;
+				}
+				.price {
+					color: #b50e03;
+					font-size: 30rpx;
+					text:nth-child(2){
+						color: #ccc;
+						font-size: 25rpx;
+						margin-left: 17rpx;
+						text-decoration: line-through;
+					}
+				}
+				.name {
+					overflow: hidden;
+					word-break: break-all;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					white-space: nowrap;
+					font-size: 30rpx;
+					height: 50rpx;
+					padding-top: 15rpx;
+					padding-bottom: 15rpx;
+				}
+			}
+		}
+	}
 </style>

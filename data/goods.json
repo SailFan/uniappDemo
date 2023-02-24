@@ -1,0 +1,152 @@
+{
+	"code": 1,
+	"msg": "成功",
+	"data": {
+		"product_list": [
+			{
+				"id": "1",
+				"add_time": "/static/banner/cumputer.png",
+				"title": "cumputer",
+				"click":0,
+				"imageUrl":"/static/banner/cumputer.png",
+				"sell_price":2499,
+				"stock_quantity":60
+			},
+			{
+				"id": "1",
+				"add_time": "/static/banner/cumputer.png",
+				"title": "cumputer",
+				"click":0,
+				"imageUrl":"/static/banner/cumputer.png",
+				"sell_price":2499,
+				"stock_quantity":60
+				},
+				{
+						"id": "2",
+						"add_time": "/static/banner/cumputer.png",
+						"title": "cumputer",
+						"click":0,
+						"imageUrl":"/static/banner/cumputer.png",
+						"sell_price":2499,
+						"stock_quantity":60
+					},
+					{
+							"id": "3",
+							"add_time": "/static/banner/cumputer.png",
+							"title": "cumputer",
+							"click":0,
+							"imageUrl":"/static/banner/cumputer.png",
+							"sell_price":2499,
+							"stock_quantity":60
+						},
+						{
+								"id": "4",
+								"add_time": "/static/banner/cumputer.png",
+								"title": "cumputer",
+								"click":0,
+								"imageUrl":"/static/banner/cumputer.png",
+								"sell_price":2499,
+								"stock_quantity":60
+							},
+							{
+									"id": "5",
+									"add_time": "/static/banner/cumputer.png",
+									"title": "cumputer",
+									"click":0,
+									"imageUrl":"/static/banner/cumputer.png",
+									"sell_price":2499,
+									"stock_quantity":60
+								},
+								{
+										"id": "6",
+										"add_time": "/static/banner/cumputer.png",
+										"title": "cumputer",
+										"click":0,
+										"imageUrl":"/static/banner/cumputer.png",
+										"sell_price":2499,
+										"stock_quantity":60
+									},
+									{
+											"id": "7",
+											"add_time": "/static/banner/cumputer.png",
+											"title": "cumputer",
+											"click":0,
+											"imageUrl":"/static/banner/cumputer.png",
+											"sell_price":2499,
+											"stock_quantity":60
+										},
+										{
+												"id": "8",
+												"add_time": "/static/banner/cumputer.png",
+												"title": "cumputer",
+												"click":0,
+												"imageUrl":"/static/banner/cumputer.png",
+												"sell_price":2499,
+												"stock_quantity":60
+											},
+											{
+													"id": "9",
+													"add_time": "/static/banner/cumputer.png",
+													"title": "cumputer",
+													"click":0,
+													"imageUrl":"/static/banner/cumputer.png",
+													"sell_price":2499,
+													"stock_quantity":60
+												},
+												{
+														"id": "10",
+														"add_time": "/static/banner/cumputer.png",
+														"title": "cumputer",
+														"click":0,
+														"imageUrl":"/static/banner/cumputer.png",
+														"sell_price":2499,
+														"stock_quantity":60
+													},
+													{
+															"id": "11",
+															"add_time": "/static/banner/cumputer.png",
+															"title": "cumputer",
+															"click":0,
+															"imageUrl":"/static/banner/cumputer.png",
+															"sell_price":2499,
+															"stock_quantity":60
+														},
+														{
+																"id": "12",
+																"add_time": "/static/banner/cumputer.png",
+																"title": "cumputer",
+																"click":0,
+																"imageUrl":"/static/banner/cumputer.png",
+																"sell_price":2499,
+																"stock_quantity":60
+															},
+															{
+																	"id": "13",
+																	"add_time": "/static/banner/cumputer.png",
+																	"title": "cumputer",
+																	"click":0,
+																	"imageUrl":"/static/banner/cumputer.png",
+																	"sell_price":2499,
+																	"stock_quantity":60
+																},
+																{
+																		"id": "14",
+																		"add_time": "/static/banner/cumputer.png",
+																		"title": "cumputer",
+																		"click":0,
+																		"imageUrl":"/static/banner/cumputer.png",
+																		"sell_price":2499,
+																		"stock_quantity":60
+																	},
+																	{
+																			"id": "15",
+																			"add_time": "/static/banner/cumputer.png",
+																			"title": "cumputer",
+																			"click":0,
+																			"imageUrl":"/static/banner/cumputer.png",
+																			"sell_price":2499,
+																			"stock_quantity":60
+																		}
+		]
+	}
+}

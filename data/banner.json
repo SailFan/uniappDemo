@@ -4,12 +4,12 @@
 	"data": {
 		"mainPositionList": [{
 				"id": "143",
-				"imgUrl": "file:/static/banner/cumputer.png",
+				"imgUrl": "/static/banner/cumputer.png",
 				"title": "cumputer"
 			},
 			{
 				"id": "147",
-				"imgUrl": "file:///Users/yz/Documents/HBuilderProjects/uniappDemo/static/banner/ear.png",
+				"imgUrl": "/static/banner/ear.png",
 				"title": "ear"
 			},
 			{

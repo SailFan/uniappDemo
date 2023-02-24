@@ -17,8 +17,8 @@
       {
         "text": "HOME",
         "pagePath": "pages/index/index",
-        "iconPath": "static/icon/_ic_tabbar_home.png",
-        "selectedIconPath": "static/icon/ic_tabbar_home_select.png"
+        "iconPath": "static/icon/home.png",
+        "selectedIconPath": "static/icon/homeSelected.png"
       },
       {
         "text": "CART",
