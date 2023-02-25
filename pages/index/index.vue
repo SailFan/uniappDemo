@@ -27,14 +27,14 @@
 	<view class="recommend">
 		<view class="title">推荐商品</view>
 		<view class="commodity_list">
-			<view class="commodity_item">
-				<image src="https://xa.zol.com.cn/picture/article/140/139756.jpg"></image>
+			<view class="commodity_item" v-for="item in goods" :key="item.id">
+				<image :src="item.imageUrl"></image>
 				<view class="price">
-					<text>$ 2199</text>
-					<text>$ 3199</text>
+					<text>$ {{item.sell_price}}</text>
+					<text>$ {{item.stock_quantity}}</text>
 				</view>
 				<view class="name">
-					联想ThinkPad X1 Carbon英特尔酷睿i7轻薄笔记本（i7-1165G7u/16G/1T/FHD/指纹/WIN11/1年上门）
+					{{item.title}}
 				</view>
 			</view>
 		</view>
@@ -46,11 +46,13 @@
 	export default {
 		data() {
 			return {
-				swiperList: []
+				swiperList: [],
+				goods: []
 			}
 		},
 		onLoad() {
 			this.getSwipers()
+			this.getHotGoods()
 		},
 		methods: {
 			getSwipers(){
@@ -63,7 +65,20 @@
 							})
 						}
 						this.swiperList=res.data.data.mainPositionList
-						console.log(this.swiperList)
+					}
+				})
+			},
+			getHotGoods() {
+				uni.request({
+					url:'/data/goods.json',
+					success: (res) => {
+						if(res.data.code!==1){
+							return uni.showToast({
+								title: "获取数据失败"
+							})
+						}
+						this.goods = res.data.data.product_list
+						console.log(this.goods)
 					}
 				})
 			}
@@ -135,6 +150,7 @@
 				.price {
 					color: #b50e03;
 					font-size: 30rpx;
+					margin: 15rpx 0;
 					text:nth-child(2){
 						color: #ccc;
 						font-size: 25rpx;
