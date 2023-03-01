@@ -1,6 +1,15 @@
 <template>
-	<view>
-		
+	<view class="news">
+		<view class="new_item">
+			<image src="../../static/product/1.png"></image>
+			<view>
+				<view class="title">hhahhafhahsfdhfhsdafhhdasf</view>
+				<view class="info">
+					<text>ewqrqwer</text>
+					<text>ewqrqwerewqrq</text>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
