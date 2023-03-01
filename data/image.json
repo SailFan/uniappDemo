@@ -1,0 +1,24 @@
+{
+	"code": 1,
+	"msg": "成功",
+	"message": [
+		{"title": "家具生活","id":14, "img_url":"/static/product/2.png"},
+		{"title": "家用小电","id":15,"img_url":"/static/product/1.png"},
+		{"title": "厨房用具","id":16,"img_url":"/static/product/2.png"},
+		{"title": "电脑配件","id":17,"img_url":"/static/product/1.png"},
+		{"title": "桌面摆件","id":18,"img_url":"/static/product/2.png"},
+		{"title": "耳机","id":19,"img_url":"/static/product/1.png"},
+		{"title": "台灯","id":20,"img_url":"/static/product/2.png"},
+		{"title": "电脑","id":21,"img_url":"/static/product/1.png"},
+		{"title": "手机","id":22,"img_url":"/static/product/2.png"},
+		{"title": "iphone","id":23,"img_url":"/static/product/1.png"},
+		{"title": "优惠区","id":24,"img_url":"/static/product/2.png"},
+		{"title": "新年快乐","id":25,"img_url":"/static/product/1.png"},
+		{"title": "书","id":26,"img_url":"/static/product/2.png"},
+		{"title": "床上用品","id":27,"img_url":"/static/product/1.png"},
+		{"title": "衣服","id":28,"img_url":"/static/product/2.png"},
+		{"title": "智能家电","id":29,"img_url":"/static/product/1.png"},
+		{"title": "充电器","id":30,"img_url":"/static/product/2.png"},
+		{"title": "机器人","id":31,"img_url":"/static/product/1.png"}
+	]
+}

@@ -6,7 +6,8 @@
     "pages/news/news",
     "pages/goods/goods",
     "component/goods_list/goods_list",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/picture/picture"
   ],
   "window": {
     "navigationBarTextStyle": "white",

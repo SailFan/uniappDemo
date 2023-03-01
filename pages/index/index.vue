@@ -46,7 +46,7 @@
 					{
 						'icon': 'iconfont icon-guanyuwomen',
 						'title':'社区',
-						'path': '/goods'
+						'path': '/pages/picture/picture'
 					}
 				]
 			}

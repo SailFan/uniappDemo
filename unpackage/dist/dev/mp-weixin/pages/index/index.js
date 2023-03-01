@@ -25,7 +25,7 @@ const _sfc_main = {
         {
           "icon": "iconfont icon-guanyuwomen",
           "title": "\u793E\u533A",
-          "path": "/goods"
+          "path": "/pages/picture/picture"
         }
       ]
     };

@@ -2,7 +2,7 @@
   "appid": "wx94cc5f8f72d95245",
   "compileType": "miniprogram",
   "libVersion": "2.30.2",
-  "miniprogramRoot": "./unpackage/dist/dev/mp-weixin",
+  "miniprogramRoot": "unpackage/dist/dev/mp-weixin/",
   "packOptions": {
     "ignore": [],
     "include": []
@@ -26,5 +26,6 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
-  "simulatorPluginLibVersion": {}
+  "simulatorPluginLibVersion": {},
+  "srcMiniprogramRoot": "unpackage/dist/dev/mp-weixin/"
 }
