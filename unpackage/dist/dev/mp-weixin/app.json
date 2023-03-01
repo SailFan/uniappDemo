@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/cart/cart",
     "pages/vip/vip",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/goods/goods",
+    "component/goods_list/goods_list",
+    "pages/contact/contact"
   ],
   "window": {
     "navigationBarTextStyle": "white",

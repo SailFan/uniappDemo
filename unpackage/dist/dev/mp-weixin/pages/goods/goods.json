@@ -1,4 +1,6 @@
 {
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "goods_list": "../../component/goods_list/goods_list"
   }

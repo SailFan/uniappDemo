@@ -6,6 +6,9 @@ if (!Math) {
   "./pages/cart/cart.js";
   "./pages/vip/vip.js";
   "./pages/news/news.js";
+  "./pages/goods/goods.js";
+  "./component/goods_list/goods_list.js";
+  "./pages/contact/contact.js";
 }
 const _sfc_main = {
   onLaunch: function() {

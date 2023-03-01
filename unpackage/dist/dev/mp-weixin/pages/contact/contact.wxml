@@ -1,0 +1,1 @@
+<view class="contact"><image class="img" src="/static/me.png"></image><view class="info"><view class=""> 联系电话： 17600576666 （点击拨打）</view><view bindtap="{{a}}"> 联系地址： 北京朝阳区光华路禾桥大厦B座3楼325</view></view><map class="map" longitude="{{b}}" latitude="{{c}}" scale="{{d}}" markers="{{e}}"></map></view>

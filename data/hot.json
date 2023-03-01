@@ -1,0 +1,152 @@
+{
+	"code": 1,
+	"msg": "成功",
+	"data": {
+		"product_list": [
+			{
+				"id": "1",
+				"add_time": "1677330512000",
+				"title": "JSQ31-16KL3U1京东小家智能",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 2499,
+				"stock_quantity": 1111
+			},
+			{
+				"id": "1",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 2399,
+				"stock_quantity": 1112
+			},
+			{
+				"id": "2",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 2299,
+				"stock_quantity": 1113
+			},
+			{
+				"id": "3",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 2199,
+				"stock_quantity": 1114
+			},
+			{
+				"id": "4",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1999,
+				"stock_quantity": 1115
+			},
+			{
+				"id": "5",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1899,
+				"stock_quantity": 1116
+			},
+			{
+				"id": "6",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1799,
+				"stock_quantity": 1117
+			},
+			{
+				"id": "7",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1699,
+				"stock_quantity": 1118
+			},
+			{
+				"id": "8",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1599,
+				"stock_quantity": 1119
+			},
+			{
+				"id": "9",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1499,
+				"stock_quantity": 1120
+			},
+			{
+				"id": "10",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1399,
+				"stock_quantity": 1101
+			},
+			{
+				"id": "11",
+				"add_time": "1677330512000",
+				"title": "智能小家电r",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1299,
+				"stock_quantity": 1102
+			},
+			{
+				"id": "12",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1199,
+				"stock_quantity": 1103
+			},
+			{
+				"id": "13",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "//static/product/1q.png",
+				"sell_price": 1299,
+				"stock_quantity": 1106
+			},
+			{
+				"id": "14",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 1199,
+				"stock_quantity": 1108
+			},
+			{
+				"id": "15",
+				"add_time": "1677330512000",
+				"title": "智能小家电",
+				"click": 0,
+				"imageUrl": "/static/product/1q.png",
+				"sell_price": 999,
+				"stock_quantity": 11112
+			}
+		]
+	}
+}

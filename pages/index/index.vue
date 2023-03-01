@@ -6,53 +6,62 @@
 			</swiper-item>
 		</swiper>
 		<!-- 导航 -->
-	<view class="nav">
-		<view class="nav_item">
-			<view class="iconfont icon-chaoshi"></view>
-			<text>超市</text>
-		</view>
-		<view class="nav_item">
-			<view class="iconfont icon-shipin_o"></view>
-			<text>视频</text>
-		</view>
-		<view class="nav_item">
-			<view class="iconfont icon-shequ"></view>
-			<text>社区</text>
-		</view>
-		<view class="nav_item">
-			<view class="iconfont icon-guanyuwomen"></view>
-			<text>关于我们</text>
-		</view>
-	</view>	
-	<view class="recommend">
-		<view class="title">推荐商品</view>
-		<view class="commodity_list">
-			<view class="commodity_item">
-				<image src="https://xa.zol.com.cn/picture/article/140/139756.jpg"></image>
-				<view class="price">
-					<text>$ 2199</text>
-					<text>$ 3199</text>
-				</view>
-				<view class="name">
-					联想ThinkPad X1 Carbon英特尔酷睿i7轻薄笔记本（i7-1165G7u/16G/1T/FHD/指纹/WIN11/1年上门）
-				</view>
+
+		<view class="nav">
+			<view class="nav_item" v-for="(item,index) in navs" :key="item.index" @click="navList(item.path)">
+				<view :class="item.icon"></view>
+				<text>{{ item.title }}</text>
 			</view>
 		</view>
+	<view class="recommend">
+		<view class="title">推荐商品</view>
+		<goods_list :goods="goods"></goods_list>
 	</view>
 	</view>
 </template>
 
 <script>
+	import goods_list from '../../component/goods_list/goods_list.vue'
 	export default {
 		data() {
 			return {
-				swiperList: []
+				swiperList: [],
+				goods: [],
+				navs: [
+					{
+						'icon': 'iconfont icon-chaoshi',
+						'title':'超市',
+						'path': '/pages/goods/goods'
+					},
+					{
+						'icon': 'iconfont icon-shipin_o',
+						'title':'视频',
+						'path': '/goods'
+					},
+					{
+						'icon': 'iconfont icon-shequ',
+						'title':'关于我们',
+						'path': '/pages/contact/contact'
+					},
+					{
+						'icon': 'iconfont icon-guanyuwomen',
+						'title':'社区',
+						'path': '/goods'
+					}
+				]
 			}
 		},
 		onLoad() {
 			this.getSwipers()
+			this.getHotGoods()
 		},
+		components: {"goods_list": goods_list},
 		methods: {
+			navList(url){
+				uni.navigateTo({
+					url:url
+				})
+			},
 			getSwipers(){
 				uni.request({
 					url: '/data/banner.json',
@@ -63,7 +72,20 @@
 							})
 						}
 						this.swiperList=res.data.data.mainPositionList
-						console.log(this.swiperList)
+					}
+				})
+			},
+			getHotGoods() {
+				uni.request({
+					url:'/data/goods.json',
+					success: (res) => {
+						if(res.data.code!==1){
+							return uni.showToast({
+								title: "获取数据失败"
+							})
+						}
+						this.goods = res.data.data.product_list
+						console.log(this.goods)
 					}
 				})
 			}
@@ -114,7 +136,7 @@
 			text-align: center;
 			background: #fff;
 			letter-spacing: 20rpx;
-			margin: 7rpx 0;
+			margin: 7rpx 0;		}
 		}
 		.commodity_list{
 			padding: 0 15rpx;
@@ -135,6 +157,7 @@
 				.price {
 					color: #b50e03;
 					font-size: 30rpx;
+					margin: 15rpx 0;
 					text:nth-child(2){
 						color: #ccc;
 						font-size: 25rpx;
@@ -157,5 +180,5 @@
 				}
 			}
 		}
-	}
+
 </style>
